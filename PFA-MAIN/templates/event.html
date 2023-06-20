@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Selection</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select an Event</h1>
+        <form action="{{ url_for('dashboard') }}" method="post">
+            <select name="event" id="event">
+                <option value="event1">Wedding</option>
+                <option value="event2">Anniversary party</option>
+                <option value="event3">Baby shower</option>
+                <option value="event4">Engagement party</option>
+                <option value="event5">Birthday</option>
+                <option value="event6">Holiday party</option>
+                <option value="event7">Charity gala</option>
+                <option value="event8">Graduation ceremony</option>
+            </select>
+            <input type="submit" value="Go to Dashboard">
+        </form>
+    </div>
+</body>
+</html>
